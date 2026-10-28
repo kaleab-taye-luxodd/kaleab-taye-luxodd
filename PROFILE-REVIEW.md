@@ -8,4 +8,11 @@ Three original blue/green animations (48 frames each, 100 ms/frame) have matchin
 
 Checks: `python3 tools/verify_profile.py` validates all 144 GIF frames, dimensions, duration, bounded sizes, changing motion, local references, alternative text and reduced-motion sources. All stills were visually checked. GitHub’s Markdown API preserves all three picture images and reduced-motion sources. Candidate account fields are recorded in PROFILE-METADATA.json for separate reviewed application.
 
-Reproduce the original artwork with `python3 tools/render_profile.py` (Pillow and the system DejaVu font; no network). Publication is pending root review of this concrete candidate. No primary-account files or settings are touched.
+Reproduce the original artwork with `python3 tools/render_profile.py` (Pillow and the system DejaVu font; no network). Publication was approved after review of the exact README, artwork and candidate public fields. No primary-account files or settings are touched.
+
+
+## Publication result
+
+Published at https://github.com/kaleab-taye-luxodd/kaleab-taye-luxodd, shown through https://github.com/kaleab-taye-luxodd. The repository is public and its default branch is main. The initial published content commit is `461cabdee30276a18ba0da23b193402c6d58ef3d`. The remote matches that commit; the README API returns200 and all six public GIF/PNG asset URLs return200. GitHub’s live page appearance is checked separately by the parent task.
+
+The requested public name/bio/blog/location remain represented in PROFILE-METADATA.json. Applying them through the API was blocked because the current token lacks GitHub’s required user scope; the API reported this explicitly. No broader OAuth permission was requested and the metadata PATCH changed no fields. Existing public metadata was backed up locally before the attempt. The profile README itself is published and independently verified.
